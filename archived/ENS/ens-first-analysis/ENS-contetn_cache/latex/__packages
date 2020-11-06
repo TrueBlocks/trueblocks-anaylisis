@@ -1,0 +1,10 @@
+base
+readr
+dplyr
+ggplot2
+tidyr
+sparkline
+ggridges
+DT
+lubridate
+bindrcpp
