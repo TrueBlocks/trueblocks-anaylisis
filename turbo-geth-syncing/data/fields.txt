@@ -1,1 +1,0 @@
-"date","bn","id","silky","name","longname","freelist","stat_psize","stat_depth","stat_entries","stat_branch_pages","stat_branch_bytes","stat_branch_pct","stat_leaf_pages","stat_leaf_bytes","stat_leaf_pct","stat_overflow_pages","stat_overflow_bytes","stat_overflow_pct","stat_total_pages","stat_total_bytes","stat_total_pct","stat_avg"

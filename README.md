@@ -1,1 +1,1 @@
-A repo for analyses about ethereum, turbo-geth, and trueblocks.
+Moved [here](http://github.com/TrueBlocks/trueblocks-analysis)
