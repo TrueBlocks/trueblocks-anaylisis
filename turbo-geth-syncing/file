@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+type="branch"
+echo "Building branch bytes file"
+cat sorted.csv | cut -d, -f1-6,10,12 | sed 's/$/,\"branch\"/' >>bytes_$type.csv
+
+type="leaf"
+echo "Building leaf bytes file"
+cat sorted.csv | cut -d, -f1-6,10,15 | sed 's/$/,\"leaf\"/' >>bytes_$type.csv
+
+type="overflow"
+echo "Building overflow bytes file"
+cat sorted.csv | cut -d, -f1-6,10,18 | sed 's/$/,\"overflow\"/' >>bytes_$type.csv
+
+echo "Building bytes file"
+cat data/byte_fields.txt >bytes.csv
+cat bytes_branch.csv bytes_leaf.csv bytes_overflow.csv | sort -u >>bytes.csv
